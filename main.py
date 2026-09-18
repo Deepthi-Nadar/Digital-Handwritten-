@@ -102,7 +102,7 @@ async def predict_page(request: Request):
 
     return templates.TemplateResponse(
         request=request,
-        name="index1.html",
+        name="index.html",
         context={}
     )
 
@@ -125,7 +125,7 @@ async def predict(
 
         return templates.TemplateResponse(
             request=request,
-            name="index1.html",
+            name="index.html",
             context={
                 "error": "Please select an image."
             }
@@ -137,7 +137,7 @@ async def predict(
 
         return templates.TemplateResponse(
             request=request,
-            name="index1.html",
+            name="index.html",
             context={
                 "error": "Please upload a valid image file."
             }
@@ -190,7 +190,7 @@ async def predict(
 
         return templates.TemplateResponse(
             request=request,
-            name="index1.html",
+            name="index.html",
             context={
                 "error": "Unable to process this image. Please try another one."
             }
